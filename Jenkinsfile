@@ -30,8 +30,8 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('', 'DockerHubCred') {
-                        sh "docker tag ${DOCKER_IMAGE_NAME} paranoid02/scientific-calculator:0.0.1"
-                        sh "docker push paranoid02/scientific-calculator"
+                        sh "docker tag ${DOCKER_IMAGE_NAME} chiragd02/scientific-calculator:0.0.1"
+                        sh "docker push chiragd02/scientific-calculator"
                     }
                 }
             }
